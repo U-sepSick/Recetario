@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ListaDynamica"
+             x:Class="ListaDynamica.MainPage">
+
+        <Grid RowSpacing="2" ColumnSpacing="2" Padding="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Menu Invierno" Grid.Row="0" Grid.ColumnSpan="5" FontSize="Large" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="DarkGray"/>
+
+            <Button Text="{Binding Menu1}" Clicked="OpenReceta" Grid.Row="1" Grid.Column="0" BackgroundColor="LightGray"/>
+
+            <Button Grid.Row="1" Grid.Column="1" Text="Menu 02" BackgroundColor="LightGray"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="Menu 03" BackgroundColor="LightGray"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="Menu 04" BackgroundColor="LightGray"/>
+            <Button Grid.Row="1" Grid.Column="4" Text="Menu 05" BackgroundColor="LightGray"/>
+
+            <Button Grid.Row="2" Grid.Column="0" Text="Menu 06" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="Menu 07" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="Menu 08" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="Menu 09" BackgroundColor="LightGray"/>
+            <Button Grid.Row="2" Grid.Column="4" Text="Menu 10" BackgroundColor="LightGray"/>
+
+            <Button Grid.Row="3" Grid.Column="0" Text="Menu 11" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="1" Text="Menu 12" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="2" Text="Menu 13" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="3" Text="Menu 14" BackgroundColor="LightGray"/>
+            <Button Grid.Row="3" Grid.Column="4" Text="Menu 15" BackgroundColor="LightGray"/>
+
+            <Button Grid.Row="4" Grid.Column="0" Text="Menu 16" BackgroundColor="LightGray"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="Menu 17" BackgroundColor="LightGray"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="Menu 18" BackgroundColor="LightGray"/>
+            <Button Grid.Row="4" Grid.Column="3" Text="Menu 19" BackgroundColor="LightGray"/>
+            <Button Grid.Row="4" Grid.Column="4" Text="Menu 20" BackgroundColor="LightGray"/>
+
+            <Button Grid.Row="5" Grid.Column="0" Text="Menu 21" BackgroundColor="LightGray"/>
+            <Button Grid.Row="5" Grid.Column="1" Text="Menu 22" BackgroundColor="LightGray"/>
+            <Button Grid.Row="5" Grid.Column="2" Text="Menu 23" BackgroundColor="LightGray"/>
+            <Button Grid.Row="5" Grid.Column="3" Text="Menu 24" BackgroundColor="LightGray"/>
+            <Button Grid.Row="5" Grid.Column="4" Text="Menu 25" BackgroundColor="LightGray"/>
+
+
+        </Grid>
+</ContentPage>

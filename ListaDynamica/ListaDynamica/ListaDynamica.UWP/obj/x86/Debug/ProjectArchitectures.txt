@@ -1,0 +1,1 @@
+C:\JFABREGAT\DEVELOPMENT\APP_Recetas\ListaDynamica\ListaDynamica\ListaDynamica\ListaDynamica.UWP\ListaDynamica.UWP.csproj;x86

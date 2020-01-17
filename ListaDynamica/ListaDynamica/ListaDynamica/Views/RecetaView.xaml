@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaDynamica.Views.RecetaView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Nombre Receta" 
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="2" 
+                   FontSize="Large" 
+                   TextColor="White" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   BackgroundColor="DarkGray"/>
+
+        <Button Text="Reemplazar receta" 
+                    Clicked="ChangeReceta" 
+                    Grid.Row="0" 
+                    Grid.Column="2" 
+                    BackgroundColor="LightGreen"/>
+
+        <Label Text="Foto Receta" 
+                   Grid.Row="1" 
+                   Grid.ColumnSpan="1"
+                   Margin="5"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   BackgroundColor="LightYellow"/>
+
+        <Label Text="Ingredientes receta" 
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   BackgroundColor="LightPink"/>
+
+        <Button Text="Volver" 
+                    Clicked="Volver" 
+                    Grid.Row="2" 
+                    Grid.ColumnSpan="3" 
+                    BackgroundColor="LightGreen"/>
+
+    </Grid>
+
+</ContentPage>

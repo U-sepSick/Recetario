@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaDynamica.Views.AddRecetaView">
+    <StackLayout>
+        <Entry Text="{Binding NomReceta}" Placeholder="Nombre de la receta"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <Entry Text="{Binding Cantidad}" Placeholder="Cantidad"/>
+                <Entry Text="{Binding NomIngrediente}" Placeholder="Ingrediente"/>
+                <Button Text="Añadir ingrediente" Command="{Binding AddIngredienteCommand}"/>
+
+                <ListView ItemsSource="{Binding Ingredientes}" HasUnevenRows="True" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="{Binding IngredienteCompleto}" Grid.Column="0"/>
+                                        <Button Text="Borrar ingrediente" Clicked="Remove_Clicked" Grid.Column="1"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+            <Label Text="Foto" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+
+            <Editor Text="{Binding Instrucciones}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+            <Button Text="Guardar" Clicked="AddNomReceta"  BackgroundColor="LightGreen" Grid.Row="3" Grid.Column="0"/>
+            <Button Text="Volver ingrediente" Clicked="Volver" BackgroundColor="LightSalmon" Grid.Row="3" Grid.Column="1"/>
+
+        </Grid>
+    </StackLayout>
+</ContentPage>
